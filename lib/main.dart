@@ -24,7 +24,9 @@ class _calculatorState extends State<calculator> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: Column(
           children: [
             Expanded(
@@ -39,7 +41,7 @@ class _calculatorState extends State<calculator> {
                           padding: const EdgeInsets.all(8.0),
                           child: Text(
                             input,
-                            style: TextStyle(
+                            style: TextStyle(color: Colors.white,
                                 fontSize: 25, fontWeight: FontWeight.w600),
                           ),
                         ),
@@ -53,7 +55,7 @@ class _calculatorState extends State<calculator> {
                             padding: const EdgeInsets.all(8.0),
                             child: Text(
                               output,
-                              style: TextStyle(
+                              style: TextStyle(color:Colors.white,
                                   fontSize: 25, fontWeight: FontWeight.w600),
                             ),
                           )),
@@ -127,7 +129,7 @@ class _calculatorState extends State<calculator> {
                               borderRadius: BorderRadius.circular(20)
                           ),
                           child: Center(child: Text(buttons[index],
-                              style: TextStyle(fontSize: 25,color: textcolor(buttons[index])))),
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25,color: textcolor(buttons[index])))),
                         ),
                       ),
                     );
