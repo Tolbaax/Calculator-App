@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
 void main() {
-  runApp(calculator());
+  runApp(Calculator());
 }
 
-class calculator extends StatefulWidget {
-  const calculator({Key? key}) : super(key: key);
+class Calculator extends StatefulWidget {
+  const Calculator({Key? key}) : super(key: key);
 
   @override
-  _calculatorState createState() => _calculatorState();
+  _CalculatorState createState() => _CalculatorState();
 }
 
-class _calculatorState extends State<calculator> {
+class _CalculatorState extends State<Calculator> {
   List<String>buttons=[
     'C','Del','%','/',
     '9','8','7','*',
